@@ -1,0 +1,46 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>signin</title>
+    <link rel="stylesheet" href="{% static 'signin/style.css' %}">
+  </head>
+  <body>
+    <div class="center">
+      <h1 ><a href="Home.html">Ethio Exam</a></h1>
+      <form method="post">
+        <div class="txt_field">
+          <input type="text" class="name" required>
+          <span></span>
+          <label>Username</label>
+        </div>
+        <div class="txt_field">
+          <input type="password" required>
+          <span></span>
+          <label>Password</label>
+        </div>
+        <div class="pass">Forgot Password?</div>
+       <input type="submit" value="Login" id="login">
+	   
+        <div class="signup_link">
+         <a href="sign_up.html">Create account</a>
+        </div>
+      </form>
+    </div>
+    <script>
+       document.addEventListener('DOMContentLoaded',function(){
+                        document.querySelector('.login').onclick = function(){
+                            const name = document.querySelector('.name').value;
+                            alert(`Welcome back, ${name}`);
+                        }
+        });
+        const exampleBtn = document.getElementById('login');
+        exampleBtn.addEventListener('click', () => {
+          window.open('Home.html', '_blank');
+        });
+
+    </script>
+
+  </body>
+</html>

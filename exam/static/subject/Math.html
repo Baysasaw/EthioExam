@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<htm>
+    <head>
+        <title>main</title>
+        <link rel="stylesheet" href="index/style.css">
+        <meta name="viewport" content="width=device-width,initial-scale=1.0">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@300;600&display=swap" rel="stylesheet">
+
+       
+    </head>
+    <body>
+    
+
+
+        </nav>
+        <nav class="navbar">
+            <nav class="nav-log">
+                <h1 class="logo"> <a href="../Home.html">Ethio Exam</a></h1>
+                <ul class="nav-link">
+                    <li> <a href="../Home.html" class="Home">Home</a> </li>
+                    <li>  <a href="../Aboutus.html">About us</a> </li>
+                    <li> <button class="menu">Menu</button> </li>
+                    <li>  <a href="../contactus.html">contact us</a> </li>
+                </ul> 
+                <img src="main/menu-regular-24 (1).png" alt="menu" class="menu-btn">
+            </nav>
+        </nav>
+
+               <script>
+                    document.addEventListener('DOMContentLoaded',function(){
+                        document.querySelector('.menu').onclick = function(){
+                            document.querySelector('.cnav').style.left = '0';
+                        }
+                    })
+
+                    document.addEventListener('DOMContentLoaded',function(){
+                        document.querySelector('.close').onclick = function(){
+                            document.querySelector('.cnav').style.left = '-100%';
+                        }
+                        document.querySelector('.body').onclick = function(){
+                            document.querySelector('.cnav').style.left = '-100%';
+                        }
+                        document.querySelector('.body').onclick = function(){
+                            navLink.classList.remove('mobile-menu')
+                            cnav.classList.remove('mobile-cnav')
+                            document.querySelector('.cnav').style.left = '-100%';
+                        }
+                        document.querySelector('.cnav').onclick = function(){
+                            navLink.classList.remove('mobile-menu')
+                            cnav.classList.remove('mobile-cnav')
+                        }
+                      
+                        
+                    })
+
+                  
+                 </script>
+        <div class="cnav">
+            <div class="close-icon">
+                <img src="index/x-regular-24 (1).png" class="close">
+            </div>
+            
+            <div class="Subject">Natural Science
+                <ul>
+                    <li  class = "active"><a href="Math.html">Mathematics</a></li>
+                    <li><a href="Biology.html">Biology</a></li>
+                    <li><a href="Physics.html">physics</a></li>
+                    <li><a href="Chemistry.html"> Chemistry</a></li>
+                </ul>
+            </div>
+
+            <div class="Subject">Social Science
+                <ul>
+                    <li><a href="English.html">English</a></li>
+                    <li><a href="Civics.html">Civic</a></li>
+                    <li><a href="History.html">History</a></li>
+                    <li><a href="Economics.html">Economics</a></li>
+                </ul>
+            </div>
+        </div>
+
+        <script>
+           const menuBtn = document.querySelector('.menu-btn')
+           const navLink = document.querySelector('.nav-link')
+           const cnav = document.querySelector('.cnav')
+
+           menuBtn.addEventListener('click',function(){
+            navLink.classList.toggle('mobile-menu')
+            cnav.classList.toggle('mobile-cnav')
+           })
+        </script>
+        </div>
+         
+      <div class="body">
+        <div class="qbody">
+            <div class="questions">
+                <h2>Mathematics</h2>
+                <div class="question">
+                    1. She wrote a book______wild animals of Ethioia.
+                    <div class="Answer">
+                       <div>
+                           <input id="A" type="radio" name="Q1" value="A">
+                           <label for="A">of</label>
+                       </div>
+                        <div>
+                           <input id="B" type="radio" name="Q1" value="B">
+                           <label for="B">for</label>
+                        </div>
+                    </div>
+                    <div class="Answer">
+                       <div>
+                           <input id="c" type="radio" name="Q1" value="c">
+                           <label for="c">in</label>
+                       </div>
+                       <div>
+                           <input id="D" type="radio" name="Q1" value="D">
+                           <label for="D">on</label>
+                       </div>
+                   </div>
+                </div>
+
+                <div class="question">
+                    2. The country has imposed heavy tax_________ imported.
+                    <div class="Answer">
+                       <div>
+                           <input id="A" type="radio" name="Q2" value="A">
+                           <label for="A">for</label>
+                       </div>
+                        <div>
+                           <input id="B" type="radio" name="Q2" value="B">
+                           <label for="B">for</label>
+                        </div>
+                    </div>
+                    <div class="Answer">
+                       <div>
+                           <input id="C" type="radio" name="Q2" value="C">
+                           <label for="C">on</label>
+                       </div>
+                       <div>
+                           <input id="D" type="radio" name="Q2" value="D">
+                           <label for="D">to</label>
+                       </div>
+                   </div>
+                </div>
+                
+
+                <div class="question">
+                    3. There is a very long bridge_______the Baro River.
+                    <div class="Answer">
+                       <div>
+                           <input id="A" type="radio" name="Q3" value="A">
+                           <label for="A">over</label>
+                       </div>
+                        <div>
+                           <input id="B" type="radio" name="Q3" value="B">
+                           <label for="B">up</label>
+                        </div>
+                    </div>
+                    <div class="Answer">
+                       <div>
+                           <input id="c" type="radio" name="Q3" value="c">
+                           <label for="c">above</label>
+                       </div>
+                       <div>
+                           <input id="D" type="radio" name="Q3" value="D">
+                           <label for="D">through</label>
+                       </div>
+                   </div>
+                </div>
+                <div class="question">
+                    4. She wrote a book______wild animals of Ethioia.
+                    <div class="Answer">
+                       <div>
+                           <input id="A" type="radio" name="Q4" value="A">
+                           <label for="A">of</label>
+                       </div>
+                        <div>
+                           <input id="B" type="radio" name="Q4" value="B">
+                           <label for="B">for</label>
+                        </div>
+                    </div>
+                    <div class="Answer">
+                       <div>
+                           <input id="c" type="radio" name="Q4" value="c">
+                           <label for="c">in</label>
+                       </div>
+                       <div>
+                           <input id="D" type="radio" name="Q4" value="D">
+                           <label for="D">on</label>
+                       </div>
+                   </div>
+                </div>
+
+                <div class="question">
+                    5. The country has imposed heavy tax_________ imported.
+                    <div class="Answer">
+                       <div>
+                           <input id="A" type="radio" name="Q5" value="A">
+                           <label for="A">for</label>
+                       </div>
+                        <div>
+                           <input id="B" type="radio" name="Q5" value="B">
+                           <label for="B">for</label>
+                        </div>
+                    </div>
+                    <div class="Answer">
+                       <div>
+                           <input id="C" type="radio" name="Q5" value="C">
+                           <label for="C">on</label>
+                       </div>
+                       <div>
+                           <input id="D" type="radio" name="Q5" value="D">
+                           <label for="D">to</label>
+                       </div>
+                   </div>
+                </div>
+                
+
+                <div class="question">
+                    6. There is a very long bridge_______the Baro River.
+                    <div class="Answer">
+                       <div>
+                           <input id="A" type="radio" name="Q6" value="A">
+                           <label for="A">over</label>
+                       </div>
+                        <div>
+                           <input id="B" type="radio" name="Q6" value="B">
+                           <label for="B">up</label>
+                        </div>
+                    </div>
+                    <div class="Answer">
+                       <div>
+                           <input id="c" type="radio" name="Q6" value="c">
+                           <label for="c">above</label>
+                       </div>
+                       <div>
+                           <input id="D" type="radio" name="Q6" value="D">
+                           <label for="D">through</label>
+                       </div>
+                   </div>
+                </div>
+                <div class="sub">
+                    <input type="submit">
+                </div>
+            </div>
+
+            </div>
+        </div>
+    </div>
+
+
+      
+    </body>
+</htm>

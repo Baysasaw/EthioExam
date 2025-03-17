@@ -1,0 +1,114 @@
+{% load static %}
+<!DOCTYPE html>
+<htm>
+    <head>
+        <title>main</title>
+        <link rel="stylesheet" href="{% static 'main/style.css' %}">
+
+        <meta name="viewport" content="width=device-width,initial-scale=1.0">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@300;600&display=swap" rel="stylesheet">
+       
+    </head>
+    <body>
+       
+        <nav class="navbar">
+            <nav class="nav-log">
+                <h1 class="logo"> <a href=''>Ethio Exam</a></h1>
+                <ul class="nav-link">
+                    <li class = "active"> <a href="Home.html" class="Home">Home</a> </li>
+                    <li>  <a href="/about">About us</a> </li>
+                    <li>  <a href="contact-as/">contact us</a> </li>
+                    <li> <a href="sign-in/" >sign in</a> </li>
+                </ul> 
+                <img src="main/menu-regular-24 (1).png" alt="menu" class="menu-btn">
+            </nav>
+        </nav>
+        <script>
+           const menuBtn = document.querySelector('.menu-btn')
+           const navLink = document.querySelector('.nav-link')
+
+           menuBtn.addEventListener('click',function(){
+            navLink.classList.toggle('mobile-menu')
+            document.querySelector('.body').onclick = function(){
+                navLink.classList.remove('mobile-menu')
+            }
+           })
+        </script>
+      <div class="main">
+        <div class="body">
+            <h3><a></a>Exam Question</h3>
+            <div class="Subject">
+                <div class="N_subject">
+                    <h4>Natural Science</h4>
+                </div>
+                <div class="C_subject">
+                    <div class="N_science">
+                        <img src="{% static 'main/math.jpg' %}" alt="Mathematics Exam">
+                        <a href="subject/Math.html" class="Start">start</a>
+                    </div>
+    
+                    <div class="N_science">
+                        <img src="{% static 'main/chemistry.jpg' %}" alt="Chemistry Exam">
+                        <a href="subject/Chemistry.html" class="Start">start</a>
+                    </div>
+                    <div class="N_science">
+                        <img src="{% static 'main/biology.jpg' %}" alt="Biology Exam">
+                        <a href="subject/Biology.html" class="Start">start</a>
+                    </div>
+                    <div class="N_science">
+                        <img src="{% static 'main/physics.jpg' %}" alt="physics Exam">
+                        <a href="subject/Physics.html" class="Start">start</a>
+                    </div>
+    
+                </div>
+            </div>
+            <div class="Subject">
+                <div class="N_subject">
+                    <h4>Social Science</h4>
+                </div>
+                <div class="C_subject">
+                    <div class="N_science">
+                        <img src="{% static 'main/History.jpg' %}" alt="History Exam">
+                        <a href="subject/History.html" class="Start">start</a>
+                    </div>
+    
+                    <div class="N_science">
+                        <img src="{% static 'main/economics.jpg' %}" alt="Economics Exam">
+                        <a href="subject/Economics.html" class="Start">start</a>
+                    </div>
+                    <div class="N_science">
+                        <img src="{% static 'main/civics.jpg' %}" alt="Civic Exam">
+                        <a href="subject/Civics.html" class="Start">start</a>
+                    </div>
+    
+                </div>
+            </div>
+            <footer>
+                <div class="footer">
+                   <div class="socialIcons">
+                       <a href="" class = "fa fa-twitter"></a>
+                       <a href="" class = "fa fa-facebook"></a>
+                       <a href="" class = "fa fa-instagram"></a>
+                       <a href="" class = "fa fa-youtube"></a>
+                   </div>
+                   <div class="footerNav">
+                       <ul>
+                           <li><a href="Home.html">Home</a></li>
+                           <li><a href="contactus.html">Contact us</a></li>
+                           <li><a href="Aboutus.html">About us</a></li>
+                       </ul>
+                   </div>
+               </div>
+               <div class="footerBottom">
+                   <p>Copyright &copy;2023</p>
+               </div>
+              </footer>
+
+        </div>
+      </div>
+      
+    </body>
+</htm>

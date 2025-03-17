@@ -1,0 +1,116 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Contact US</title>
+    <link rel="stylesheet" href="{% static 'SIGN_UP/styles.css' %}">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@300;600&display=swap" rel="stylesheet">
+  </head>
+  <body>
+    <form action="">
+      <h1 ><a href="Home.html">Ethio Exam</a></h1>
+      <div class="title">
+        <h2>Sign In</h2>
+      </div>
+      <div class="half">
+        <div class="item">
+            <input type="text" required class="fname">
+            <label for="Month">First Name</label>
+        </div>
+        <div class="item">
+            <input type="text" required class="mname">
+            <label for="Date">middle name</label>
+        </div>
+        <div class="item">
+            <input type="text" required>
+            <label for="Year">last name</label>
+        </div>
+    </div>
+
+      
+      <div class="half">
+        <div class="item">
+          <input type="number" min="1" max="12" required>
+          <label for="Month">Month</label>
+        </div>
+        <div class="item">
+          <input type="number" min="1" max="31" required>
+            <label for="date">Day </label>
+        </div>
+        <div class="item">
+            <input type="number" min="1900" max="2023" required>
+            <label for="Year">Year</label>
+        </div>
+    </div>
+    
+    <div class="half">
+        <div >
+            <h4>Gender</h4>
+            <input type="radio"  name="Gender" value="male">Male <input type="radio" name="Gender" value="female">Female
+        </div>
+        <div class="item">
+            <h4>of which country are you citizen?</h4>
+            <input>
+        </div>
+    </div>
+
+    <div class="half">
+     <div class="item">
+         <label  for="phone number">Phone Number</label>
+         <input type="number" id = "Phone number">
+     </div>
+     <div class="item">
+         <label  for="email">E-mail Address</label>
+         <input type="text" id = "email"  name="Gender">
+     </div>
+    </div>
+
+    <div class="half">
+     <div class="item">
+         <label  for="Password">Enter Password</label>
+         <input type="number" id = "password number">
+     </div>
+     <div class="item">
+         <label  for="email">confirm Password</label>
+         <input type="text" id = "email">
+     </div>
+    </div>
+
+      </div>
+      <div class="action">
+        <input type="button" value="Back" id="back-btn">
+        <input type="submit" value="sign up" class="submit">
+      </div>
+      <script>
+         document.addEventListener('DOMContentLoaded',function(){
+                        document.querySelector('.submit').onclick = function(){
+                          const fname = document.querySelector('.fname').value;
+                          const mname = document.querySelector('.mname').value;
+                            alert(`welcome , ${fname} ${mname} thank you for sign up!`);
+                        }
+        });
+
+        const exampleBtn = document.getElementById('back-btn');
+        exampleBtn.addEventListener('click', () => {
+          window.open('signin.html', '_blank');
+        });
+
+
+
+              
+          
+      </script>
+      <div class="icons">
+        <a href="" class = "fa fa-twitter"></a>
+        <a href="" class = "fa fa-facebook"></a>
+        <a href="" class = "fa fa-instagram"></a>
+        <a href="" class = "fa fa-github"></a>
+      </div>
+    </form>
+  </body>
+</html>
