@@ -1,0 +1,262 @@
+* {
+  box-sizing: border-box;
+  text-decoration: none;
+  color: #fff;
+}
+.navbar
+{
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: end;
+    width: 100%;
+    padding: 20px;
+}
+.nav-link{
+    display: flex;
+    align-items: center;
+}
+.nav-link li{
+    margin: 0 30px;
+}
+li{
+    list-style: none;
+}
+.logo{
+   width: 200px;
+   padding: 5px;
+}
+.active a{
+    color:aqua;
+    text-decoration: underline;
+    font-weight: bold;
+}
+.menu-btn{
+    position: absolute;
+    top: 30px;
+    right: 30px;
+    width: 30px;
+    cursor: pointer;
+    display: none;
+}
+.nav-log{
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100px;
+    background-color: black;
+}
+
+body{
+  background: linear-gradient(green,yellow, red);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+form{
+  background: rgba(27,31,34,0.80);
+  width: 640px;
+  margin:140px auto;
+  max-width: 97%;
+  border-radius: 4px;
+  padding: 55px 30px;
+}
+
+form .title h2{
+  letter-spacing: 6px;
+  border-bottom: 1px solid white;
+  display: inline-block;
+  padding-bottom: 8px;
+  margin-bottom: 32px;
+  margin-top: 32px;
+}
+form h1{
+  text-align: center;
+  padding: 20px 0;
+  border-bottom: 1px solid silver;
+}
+
+form .half{
+  display: flex;
+  justify-content: space-between;
+}
+
+form .half .item{
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 24px;
+  width: 48%;
+}
+form label{
+  display: block;
+  font-size: 13px;
+  letter-spacing: 3.5px;
+  margin-bottom: 16px;
+}
+
+form .half .item input{
+  border-radius: 4px;
+  border: 1px solid white;
+  outline: 0;
+  padding: 16px;
+  width: 100%;
+  height: 44px;
+  background: transparent;
+  font-size: 17px;
+}
+
+form .full{
+  margin-bottom: 24px;
+}
+
+form .full textarea{
+  background: transparent;
+  border-radius: 4px;
+  border: 1px solid white;
+  outline: 0;
+  padding: 12px 16px;
+  width: 100%;
+  height: 200px;
+  font-size: 17px;
+}
+
+form .action{
+  margin-bottom: 32px;
+}
+
+form .action input{
+  background: transparent;
+  border-radius: 4px;
+  border: 1px solid white;
+  cursor: pointer;
+  font-size: 13px;
+  font-weight: 600;
+  height: 44px;
+  letter-spacing: 3px;
+  outline: 0;
+  padding: 0 20px 0 22px;
+  margin-right: 10px;
+}
+
+form .action input[type="submit"]{
+  background: white;
+  color: black;
+}
+
+form .icons a{
+  border: 1px solid white;
+  border-radius: 50%;
+  line-height: 36px;
+  text-align: center;
+  font-weight: 600;
+  width: 38px;
+  margin-right: 10px;
+}
+
+form .half .item input:focus, form .full textarea:focus, form .action input[type="reset"]:hover, form .icons a:hover{
+  background: rgba(255,255,255,0.075);
+}
+footer{
+  background: rgba(27,31,34,0.60);
+  margin-top: 100px;
+  clear: both;
+}
+.footer{
+  width: 100%;
+  padding: 70px 30px 20px;
+}
+.socialIcons{
+  display: flex;
+  justify-content: center;
+}
+.socialIcons a{
+  padding: 10px;
+  margin: 10px;
+  border-radius: 50%;
+}
+.socialIcons a{
+  font-size: 2em;
+  color: black;
+  opacity: 0.9;
+}
+a:hover{
+  color:rgb(238, 206, 206);
+}
+
+.socialIcons a:hover{
+  background-color: rgba(34, 31, 31, 0.295);
+  transition: 0.5s;
+}
+.socialIcons a:hover i {
+  transition: 0.5;
+}
+.footerNav{
+  margin: 30px 0;
+}
+
+.footerNav ul{
+  display: flex;
+  justify-content: center;
+  list-style-type: none;
+}
+
+.footerNav ul li a{
+  color: white;
+  margin: 20px;
+  text-decoration: none;
+  font-size: 20px;
+  opacity: 0.7;
+  transition: 0.5s;
+}
+.footerNav ul li a:hover{
+  opacity: 1;
+}
+.footerBottom{
+  background-color: black;
+  padding: 20px;
+  text-align: center;
+  color: white;
+}
+@media (max-width:700px) {
+  .menu-btn{
+      display: block;
+  }
+  .navbar{
+      padding: 0;
+      background-color:#8F7878;
+  }
+  .logo{
+      position:absolute;
+      width: 100%;
+  }
+  
+  .nav-link{
+      flex-direction: column;
+      background-color: black;
+      width: 100%;
+      height: 34vh;
+      justify-content: center;
+      margin-top: -340px;
+      transition: all 0.5s ease;
+  }
+  .mobile-menu{
+      margin-top: 0px;
+      border-bottom-right-radius: 30;
+  }
+  .nav-link li{
+      margin: 5px auto;
+  }
+
+  .footerNav ul{
+      flex-direction: column;
+  }
+  .footerNav ul li{
+      width: 100%;
+      text-align: center;
+      margin: 10px;
+  }
+}
+
