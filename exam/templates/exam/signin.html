@@ -1,12 +1,6 @@
+{% extends "exam/main.html" %}
 {% load static %}
-<!DOCTYPE html>
-<html lang="en" dir="ltr">
-  <head>
-    <meta charset="utf-8">
-    <title>signin</title>
-    <link rel="stylesheet" href="{% static 'signin/style.css' %}">
-  </head>
-  <body>
+{% block body %}
     <div class="center">
       <h1 ><a href="Home.html">Ethio Exam</a></h1>
       <form method="post">
@@ -42,5 +36,4 @@
 
     </script>
 
-  </body>
-</html>
+{% endblock %}
